@@ -2,6 +2,7 @@ package com.kiaan.readwritetofirebase;
 
 public class Item {
 
+
     private String itemName, itemDesc, itemCategory;
 
     public Item(String itemName, String itemDesc, String itemCategory) {
@@ -10,10 +11,30 @@ public class Item {
         this.itemCategory = itemCategory;
     }
 
-    public Item(String itemName, String itemCategory) {
-        this.itemName = itemName;
-        this.itemCategory = itemCategory;
-        itemDesc = null;
+    public String getItemName() {
+        return itemName;
     }
+
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public String getItemDesc() {
+        return itemDesc;
+    }
+
+    public void setItemDesc(String itemDesc) {
+        this.itemDesc = itemDesc;
+    }
+
+    public String getItemCategory() {
+        return itemCategory;
+    }
+
+    public void setItemCategory(String itemCategory) {
+        this.itemCategory = itemCategory;
+    }
+
+
 
 }

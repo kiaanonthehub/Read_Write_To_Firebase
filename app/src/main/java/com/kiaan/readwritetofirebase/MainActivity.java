@@ -50,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
             DbHandler db = new DbHandler();
 
             // write object to database
-             db.writeToFirebase("Category", cat.getCategoryName() , cat);
+            db.writeToFirebase("User",Global.userID,"Category", cat.getCategoryName(), cat);
+
+            // assign category to test
+            Global.category = cat.getCategoryName();
 
             // navigate to a new activity
             Intent intent = new Intent(MainActivity.this, ItemActivity.class);
