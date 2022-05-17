@@ -12,9 +12,12 @@ public  class DbHandler {
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.child(tableName).child(uID).setValue(obj);
+
+        System.out.println("Successful");
     }
 
-    //overload method to write nested child object to real time database
+
+    // overload method to write nested child object to real time database
     public void writeToFirebase(String tableName, String uID, String tableName2, String uID2, Object obj) {
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
