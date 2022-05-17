@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136182035591",
+    "project_id": "readwritetofirebase-689af",
+    "storage_bucket": "readwritetofirebase-689af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136182035591:android:5d04e6b6e111250ce13422",
+        "android_client_info": {
+          "package_name": "com.kiaan.readwritetofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136182035591-l3d763uk3enpmoervphqcqmnpan6jpci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx1gTgnvmUfpdyymnr9bV-J8iVwTiIb-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136182035591-l3d763uk3enpmoervphqcqmnpan6jpci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
