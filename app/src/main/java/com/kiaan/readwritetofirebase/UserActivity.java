@@ -24,7 +24,14 @@ public class UserActivity extends AppCompatActivity {
         edtSurname = findViewById(R.id.editTextSurname);
         edtEmail = findViewById(R.id.editTextEmail);
 
+        // instantiate DbHandler obj
+        DbHandler db = new DbHandler();
+        db.readFromFirebase();
+
         btnAddUser.setOnClickListener(view -> {
+
+            // clear array list
+            Global.lstStrings.clear();
 
             // declare variables
             String name, surname, email;
@@ -37,14 +44,14 @@ public class UserActivity extends AppCompatActivity {
             // instantiate User obj
             User user = new User(name, surname, email);
 
-            // instantiate DbHandler obj
-            DbHandler db = new DbHandler();
+            db.readFromFirebase();
 
             // write object to database
-            db.writeToFirebase("User", user.getName() + " " + user.getSurname(), user);
+            db.writeToFirebase("User", user.getName()+ user.getSurname(), user);
+
 
             // for test purposes
-            Global.userID = user.getName() + " " + user.getSurname();
+            Global.userID = user.getName() + user.getSurname();
 
             // navigate to a new activity
             Intent intent = new Intent(UserActivity.this, MainActivity.class);

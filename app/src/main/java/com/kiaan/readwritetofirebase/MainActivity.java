@@ -38,14 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
             // instantiate Category obj
             Category cat = new Category(name, desc, goal);
-/*
-            DatabaseReference mDatabase;
-            mDatabase = FirebaseDatabase.getInstance().getReference();
 
-            mDatabase.child("Category").child(cat.getCategoryName()).setValue(cat);
-
-
- */
             // instantiate DbHandler obj
             DbHandler db = new DbHandler();
 
