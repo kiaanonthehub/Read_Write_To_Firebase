@@ -18,7 +18,6 @@ public class ItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
-
         // initialise java componenets
         btnItem = findViewById(R.id.btnAddItem);
         edtItemName = findViewById(R.id.editTextItemName);

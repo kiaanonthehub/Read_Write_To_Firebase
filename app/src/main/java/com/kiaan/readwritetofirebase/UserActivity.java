@@ -26,8 +26,8 @@ public class UserActivity extends AppCompatActivity {
 
         // instantiate DbHandler obj
         DbHandler db = new DbHandler();
-        db.readFromFirebase();
 
+        // button click
         btnAddUser.setOnClickListener(view -> {
 
             // clear array list
@@ -44,7 +44,7 @@ public class UserActivity extends AppCompatActivity {
             // instantiate User obj
             User user = new User(name, surname, email);
 
-            db.readFromFirebase();
+            db.readFromFirebase("KiaanMaharaj","Category");
 
             // write object to database
             db.writeToFirebase("User", user.getName()+ user.getSurname(), user);

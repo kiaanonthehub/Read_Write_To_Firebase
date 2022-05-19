@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         edtCateDesc = findViewById(R.id.editTextDesc);
         edtCatGoal = findViewById(R.id.editTextGoal);
 
+        // button click
         btnCategory.setOnClickListener(view -> {
 
             // initialise variables

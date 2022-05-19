@@ -3,14 +3,19 @@ package com.kiaan.readwritetofirebase;
 public class User {
 
 
+    // variables
     private  String name , surname , email;
 
+    // constructor
     public User(String name, String surname, String email) {
         this.name = name;
         this.surname = surname;
         this.email = email;
     }
 
+    /*
+    Getters and Setters
+     */
     public String getName() {
         return name;
     }

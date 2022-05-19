@@ -2,15 +2,20 @@ package com.kiaan.readwritetofirebase;
 
 public class Item {
 
-
+    // variables
     private String itemName, itemDesc, itemCategory;
 
+    // constructor
     public Item(String itemName, String itemDesc, String itemCategory) {
         this.itemName = itemName;
         this.itemDesc = itemDesc;
         this.itemCategory = itemCategory;
     }
 
+
+    /*
+    Getters and Setters
+     */
     public String getItemName() {
         return itemName;
     }
